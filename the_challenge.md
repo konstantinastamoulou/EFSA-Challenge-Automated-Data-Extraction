@@ -1,7 +1,7 @@
 # EFSA-Challenge-Automated-Data-Extraction
 
-#Detailed Description & Requirements
-##BACKGROUND
+# Detailed Description & Requirements
+## BACKGROUND
 
 Data extraction from texts and images is a fundamental human action. Anytime we read a book or newspaper we’re extracting data whether we know it or not. This extraction may be non-targeted, such as when reading an article on a new topic and placing various key points into memory, or targeted, such as when searching for the score of a particular sporting event. Beyond everyday reading, data extraction is a key part of gathering information for almost any endeavor and spans all fields of work. Investors scan news items for companies of interest and stock prices, scientists read publications to extract data relevant to their own studies, auto mechanics look for torque specification for tightening bolts, etc.. These are targeted data extractions wherein the person is looking for and extracting specific information from the content and the data elements to be extracted can be defined beforehand. Automation of this type of targeted data extraction would save a tremendous amount of human resources for organizations that depend on extracting data from published material, particularly considering the ever-increasing mass of specialized documentation available.
 
@@ -11,7 +11,7 @@ At the present time some methodologies falling under the broad category of machi
 
  
 
-##DATA
+## DATA
 
 The data for this Challenge is found in the attachment Dataset.zip and covers four topic areas that are the subject of four literature reviews (LR) performed in EFSA. For each topic area the following files are provided:
 
@@ -28,7 +28,7 @@ Amphibian  and  reptile  ecotoxicology (PRAS AmphibRept)
 Toxoplasma gondii (BIOHAZ Toxoplasma)
  
 
-##THE CHALLENGE
+## THE CHALLENGE
 
 The Seeker desires a general algorithm for data element extraction from electronic documents including graphs and images. The proposed solution must meet the following Technical Requirements:
 
@@ -39,7 +39,7 @@ Articles for training set will be stored locally in PDF form in a directory from
 Articles for validation set will be stored locally in PDF form in a directory from which the executable is run adopting the following filename convention: “topic name”+”_”+”RefID”+”.pdf” (for example ALPHA Xylella_5.pdf).
 Training dataset: input of data elements extracted by experts from training set should be read from a CSV file that contains in the first column the topic name, the second column the reference identifier (RefID), the third column the Bibliographic entry, and in the following columns the extracted data elements with data element names in the first row of the file.
 
-
+![Schema for algorithm general functioning](https://www.innocentive.com/projectImages/ck-images/Image/EFSA.jpg)
 Figure 1 Schema for algorithm general functioning
 
  
@@ -65,7 +65,7 @@ At least 3 elements extracted, with per individual element average F-score (aver
 None. This evaluation stage does not have a minimum requirement but will be used to differentiate submissions that have met 1 and 2 above.
 F-score is defined as 2*(precision*recall)/(precision+recall) where precision and recall are based on the number of unique values for a particular data element. An explanation and example of the scoring system can be found in the file Example of Scoring System.pdf included in the Dataset.zip file attached to this Challenge.
 
-##Project Criteria
+## Project Criteria
 The submitted proposal should include the following:
 
 A detailed description of the proposed Solution addressing specific Technical Requirements presented in the Detailed Description of the Challenge. This should also include a thorough description of the algorithm used in the Solution accompanied by a well-articulated rationale for the method employed.
